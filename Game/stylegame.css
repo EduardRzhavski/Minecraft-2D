@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "VT323", monospace;
+}
+body {
+  background: url(http://m.gettywallpapers.com/wp-content/uploads/2020/05/Wallpapers-Minecraft.jpg)
+    no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#game {
+  min-width: 1400px;
+  height: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+#tools {
+  width: 150px;
+  height: 100%;
+  background-color: rgb(59, 55, 55);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  gap: 25px;
+}
+.tool {
+  width: 100px;
+  height: 100px;
+  padding: 20px 10px;
+}
+.tool:hover {
+  border: black 3px solid;
+  cursor: pointer;
+}
+
+.shovel {
+  background: url("/Assets/shovel.png") no-repeat center center/cover;
+}
+
+.axe {
+  background: url("/Assets/axe.png") no-repeat center center/cover;
+}
+
+.pickaxe {
+  background: url("/Assets/pickaxe.png") no-repeat center center/cover;
+}
+
+.last-picked {
+  border: lightslategray 3px solid;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(32, 29, 29);
+}
+.restart {
+  width: 120px;
+  height: 90px;
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+}
+.restart:hover {
+  background-color: darkred;
+  cursor: pointer;
+}
+button {
+    font-size: 30px;
+  }
+#landscape {
+  width: 1200px;
+  height: 100%;
+}
+.row {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.cell {
+  width: 80px;
+  height: 80px;
+}
+.cell:hover {
+  border: 3px black solid;
+}
+
+.sky {
+    background: url("/Assets/sky.jpg") no-repeat center center/cover;
+}
+.stone {
+    background: url("/Assets/stone.png") no-repeat center center/cover;
+}
+.leaves {
+  background: url("/Assets/leavsi.jpg") no-repeat center center/cover;
+}
+.wood {
+  background: url("/Assets/wood.png") no-repeat center center/cover;
+}
+.dirt {
+  background: url("/Assets/dirt.jpg") no-repeat center center/cover;
+}
+.gold {
+  background: url("/Assets/gold.png") no-repeat center center/cover;
+}
+.currtool {
+  border: blue 1px solid;
+}
+
+@media screen and (max-width: 768px) {
+  .tool {
+      width: 40px;
+      height: 40px;
+      padding: 5px;
+  }
+
+  .row {
+      height: 30px;
+  }
+
+  .cell {
+      width: 30px;
+      height: 30px;
+  }
+  #landscape {
+    max-width: 768px; 
+}
+}
+
+@media screen and (max-width: 500px) {
+  .tool {
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+  }
+
+  .row {
+      height: 20px;
+  }
+
+  .cell {
+      width: 20px;
+      height: 20px;
+  }
+  #landscape {
+    max-width: 500px;
+}
+}

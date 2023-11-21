@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=VT323"
+    />
+    <link rel="stylesheet" href="stylegame.css" />
+    <link rel="icon" href="/Assets/icon.png" type="image-icon" />
+    <title>Mincraft 2D - Play</title>
+  </head>
+
+  <body>
+    <div id="game">
+      <section id="tools">
+        <div class="tool shovel"></div>
+        <div class="tool axe"></div>
+        <div class="tool pickaxe"></div>
+        <div class="last-picked"></div>
+        <button class="restart" onclick="window.location.reload()">
+          Restart Game
+        </button>
+      </section>
+      <main id="landscape"></main>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
